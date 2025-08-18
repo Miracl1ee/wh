@@ -3,4 +3,4 @@ import os
 load_dotenv()
 db = os.getenv("DATABASE_URL")
 TOKEN=os.getenv('token')
-API_URL = os.getenv('API_URL') 
+
