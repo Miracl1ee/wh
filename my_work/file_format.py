@@ -15,11 +15,12 @@ class FileFormat():
         workbook.close()
         print('Ввод совершен')
         
-        def write_to_csv(self, line):
-            if not line:
-                print('Нечего записывать в файл')
-                return
-        with open('new_file.csv', 'a', newline='', encoding='utf-8') as file:
-            file.write(line + '\n')
-        print('Ввод совершен')
+def write_to_csv(self, line):
+    if not line:
+        print('Нечего записывать в файл')
+            return
+    with open('new_file.csv', 'a', newline='', encoding='utf-8') as file:
+        file.write(line + '\n')
+    print('Ввод совершен')
+
         
