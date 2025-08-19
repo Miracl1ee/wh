@@ -40,7 +40,7 @@ def search_with_username_and_housework(user_name, query_housework):
             'user_name': task[1],
             'house_work': task[2]
         })
-        return jsonify(result), 200
+    return jsonify(result), 200
 
 
 @app.route('/work/<user_name>/delete_all', methods=['POST'])
@@ -71,3 +71,4 @@ def write_to_xlsx():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000, debug=True)
+
