@@ -1,12 +1,12 @@
 from flask import Flask, jsonify, request
 from database import Database
-from databaseUsers import databaseUsers
+from databaseUsers import databaseUsers, User
 from file_format import FileFormat
 from flask_httpauth import HTTPBasicAuth
 from werkzeug.security import generate_password_hash, check_password_hash
 from pydantic_file import register_important, add_homework_important
 from pydantic import ValidationError
-from databaseUsers import User
+
 
 app = Flask(__name__)
 db_homework = Database()
